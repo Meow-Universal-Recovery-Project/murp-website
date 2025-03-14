@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/murp.svg';
+import { Icon } from 'astro-icon/components';
+---
+
+<nav class="container mx-auto flex items-center px-3 py-5">
+    <a href="/">
+        <Image
+            src={logo}
+            alt="Meow Universal Recovery Project"
+            class="w-16 stroke-gray-800 dark:stroke-gray-200"
+        />
+    </a>
+    <ul class="ml-10 flex gap-8 text-gray-800 dark:text-gray-200">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Download</a></li>
+    </ul>
+    <Icon
+        name="fa6-brands:discord"
+        class="ml-auto text-xl text-gray-800 dark:text-gray-200"
+    />
+    <Icon
+        name="fa6-brands:github"
+        class="ml-5 text-xl text-gray-800 dark:text-gray-200"
+    />
+</nav>

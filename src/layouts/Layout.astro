@@ -1,5 +1,8 @@
 ---
+import Navbar from '../components/Navbar.astro';
 import '../styles/global.css';
+
+const hasHero = Astro.slots.has('hero');
 ---
 
 <!doctype html>
@@ -25,7 +28,11 @@ import '../styles/global.css';
         <meta name="generator" content={Astro.generator} />
         <title>Meow Universal Recovery Project</title>
     </head>
-    <body class="m-0 min-h-screen w-full bg-gray-100 font-sans antialiased">
+    <body
+        class={`border-primary-500 dark:border-primary-400 m-0 min-h-screen w-full border-t-4 flex flex-col bg-gray-100 font-sans antialiased dark:bg-gray-900 ${hasHero && 'min-h-dvh'}`}
+    >
+        <Navbar />
+        <slot name="hero" />
         <slot />
     </body>
 </html>

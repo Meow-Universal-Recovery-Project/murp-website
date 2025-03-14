@@ -6,6 +6,18 @@
         'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
+
+    --color-primary-50: oklch(95.13% 0.014 299.8);
+    --color-primary-100: oklch(90.25% 0.029 298.86);
+    --color-primary-200: oklch(80.4% 0.06 299.2);
+    --color-primary-300: oklch(70.31% 0.093 297.82);
+    --color-primary-400: oklch(60.14% 0.126 296.09);
+    --color-primary-500: oklch(50.16% 0.16 293.92);
+    --color-primary-600: oklch(42.87% 0.133 293.74);
+    --color-primary-700: oklch(35.37% 0.105 294.28);
+    --color-primary-800: oklch(27.46% 0.076 295.25);
+    --color-primary-900: oklch(18.83% 0.042 295.22);
+    --color-primary-950: oklch(14.43% 0.022 297.78);
 }
 
 /* inter-latin-wght-normal */
